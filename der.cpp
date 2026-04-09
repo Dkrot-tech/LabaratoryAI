@@ -15,7 +15,9 @@ int main() {
                (std::iscntrl(static_cast<unsigned char>(c)) && c != ' ');
     }), text.end());
     
-    std::cout << "Result: " << text << std::endl;
+    std::cout << "Result: " << text << std::endl;//вывод
+    //что то
+    
     
     return 0;
 }
