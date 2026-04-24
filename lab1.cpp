@@ -1,16 +1,16 @@
 #include <iostream>
 #include <string>
-#include <cctype> // для функции tolower
+#include <cctype> 
 
 using namespace std;
 
-// Функция проверки, является ли строка палиндромом
+
 bool isPalindrome(const string& str) {
-    int left = 0;                    // Указатель на начало строки
-    int right = str.length() - 1;   // Указатель на конец строки
+    int left = 0;                    
+    int right = str.length() - 1;   
     
     while (left < right) {
-        // Пропускаем символы, не являющиеся буквами или цифрами (опционально)
+        
         while (left < right && !isalnum(str[left])) {
             left++;
         }
@@ -18,25 +18,25 @@ bool isPalindrome(const string& str) {
             right--;
         }
         
-        // Сравниваем символы в нижнем регистре (регистронезависимо)
+        
         if (tolower(str[left]) != tolower(str[right])) {
-            return false; // Если символы не совпадают - не палиндром
+            return false; 
         }
         
-        left++;  // Двигаем левый указатель вправо
-        right--; // Двигаем правый указатель влево
+        left++;  
+        right--; 
     }
     
-    return true; // Все символы совпали - строка палиндром
+    return true;
 }
 
 int main() {
     string input;
     
     cout << "Введите строку для проверки: ";
-    getline(cin, input); // Считываем всю строку с пробелами
+    getline(cin, input); 
     
-    // Вызываем функцию проверки и выводим результат
+    
     if (isPalindrome(input)) {
         cout << "Да, строка является палиндромом!" << endl;
     } else {
@@ -45,4 +45,4 @@ int main() {
     
     return 0;
 }
-// dfghjkl
+
