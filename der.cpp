@@ -16,8 +16,7 @@ int main() {
     }), text.end());
     
     std::cout << "Result: " << text << std::endl;//вывод
-    //что то
-//kak dela
+ 
     
     return 0;
 }
