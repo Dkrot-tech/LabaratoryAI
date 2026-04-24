@@ -8,8 +8,9 @@ int main() {
     
     std::cout << "Enter string: ";
     std::getline(std::cin, text);
-    
-    // Удаляем все знаки препинания и служебные символы, кроме пробела
+    //r4t5
+
+    //effer
     text.erase(std::remove_if(text.begin(), text.end(), [](char c) {
         return std::ispunct(static_cast<unsigned char>(c)) || 
                (std::iscntrl(static_cast<unsigned char>(c)) && c != ' ');
